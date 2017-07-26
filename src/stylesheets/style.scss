@@ -1,0 +1,140 @@
+$white: #fff;
+$babyblue: #b3ceef;
+$black: #000;
+$darkblue: #069;
+$orange: #d89038;
+$grey: #ccc;
+$red: #a00;
+$green: #0a0;
+
+$button-size: 15vh;
+$instructions-margin: 5%;
+$instructions-size: 90%;
+
+body {
+  background-color: $white;
+  color: $black;
+  font: 34px Helvetica, Arial, sans-serif;
+  position: relative;
+} 
+
+a {
+  color: $white;
+}
+
+div {
+  font-size: 34px;
+  width: 100%;
+}
+
+h1, 
+h2 {
+  font-size: 40pt;
+  font-weight: bold;
+  line-height: 12vh; 
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+
+  @media only screen and (max-width : 667px) 
+  {
+    font-size: 24pt;
+  }
+
+  @media only screen and (max-width : 450px) 
+  {
+    font-size: 30pt;
+  }
+}
+
+header {
+  background-color: $grey;
+  color: $darkblue;
+  font-size: 16pt;
+  height: 12vh;
+  margin: auto;
+  padding: 0;
+  width: 100%; 
+}
+
+.title-block {
+  background-color: $grey;
+  height: 8vh;
+  line-height: 8vh;
+
+  .page-title {
+    color: $darkblue;
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+
+    @media only screen and (max-width : 1024px) 
+    {
+      font-size: 32pt;
+    }
+  }
+}
+
+form {
+  margin: auto;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 400px;
+
+  input {
+    border: 1px solid $darkblue;
+  }
+
+  @media only screen and (max-width : 450px) 
+  {
+    width: 90%;
+  }
+
+  .form-adjustment {
+    text-align: left;
+
+    &-preview {
+      padding: 30px;
+      background-color: $babyblue;
+    }
+  }
+
+  h3 {
+    @media only screen and (max-width : 667px) 
+    {
+      font-size: 24pt;
+    }
+
+    @media only screen and (max-width : 450px) 
+    {
+      font-size: 30pt;
+    }
+  }
+}
+
+button {
+  background-color: $darkblue;
+  color: $white;
+  font-size: 20px;
+}
+
+.button {
+  &-reject-tech {
+    background-color: $red;
+  }
+  &-approve-tech {
+    background-color: $green;
+  }
+}
+
+.main {
+  background-color: $white;
+  height: 80vh;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.tech-qa {
+  display: none;
+}

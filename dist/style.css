@@ -1,0 +1,94 @@
+body {
+  background-color: #fff;
+  color: #000;
+  font: 34px Helvetica, Arial, sans-serif;
+  position: relative; }
+
+a {
+  color: #fff; }
+
+div {
+  font-size: 34px;
+  width: 100%; }
+
+h1,
+h2 {
+  font-size: 40pt;
+  font-weight: bold;
+  line-height: 12vh;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle; }
+  @media only screen and (max-width: 667px) {
+    h1,
+    h2 {
+      font-size: 24pt; } }
+  @media only screen and (max-width: 450px) {
+    h1,
+    h2 {
+      font-size: 30pt; } }
+
+header {
+  background-color: #ccc;
+  color: #069;
+  font-size: 16pt;
+  height: 12vh;
+  margin: auto;
+  padding: 0;
+  width: 100%; }
+
+.title-block {
+  background-color: #ccc;
+  height: 8vh;
+  line-height: 8vh; }
+  .title-block .page-title {
+    color: #069;
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center; }
+    @media only screen and (max-width: 1024px) {
+      .title-block .page-title {
+        font-size: 32pt; } }
+
+form {
+  margin: auto;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 400px; }
+  form input {
+    border: 1px solid #069; }
+  @media only screen and (max-width: 450px) {
+    form {
+      width: 90%; } }
+  form .form-adjustment {
+    text-align: left; }
+    form .form-adjustment-preview {
+      padding: 30px;
+      background-color: #b3ceef; }
+  @media only screen and (max-width: 667px) {
+    form h3 {
+      font-size: 24pt; } }
+  @media only screen and (max-width: 450px) {
+    form h3 {
+      font-size: 30pt; } }
+
+button {
+  background-color: #069;
+  color: #fff;
+  font-size: 20px; }
+
+.button-reject-tech {
+  background-color: #a00; }
+
+.button-approve-tech {
+  background-color: #0a0; }
+
+.main {
+  background-color: #fff;
+  height: 80vh;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%; }
+
+.tech-qa {
+  display: none; }

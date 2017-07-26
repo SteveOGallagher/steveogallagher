@@ -1,0 +1,59 @@
+{
+  "name": "windowsapp",
+  "version": "0.0.0",
+  "description": "A sample Node.js app using Express 4",
+  "private": true,
+  "scripts": {
+    "start": "nodemon server.js",
+    "webpack": "webpack-dev-server --progress --inline",
+    "production": "webpack -p",
+    "watch": "webpack --watch --progress"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "nodemon": "^1.11.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "serve-favicon": "~2.3.0",
+    "socket.io": "^1.6.0",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-react": "^6.16.0",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.11",
+    "html-webpack-plugin": "^2.24.1",
+    "pump": "^1.0.1",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "request": "^2.79.0",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2",
+    "babel-preset-es2016": "^6.16.0"
+  },
+  "engines": {
+    "node": "6.1.0"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "aws-sdk": "^2.41.0",
+    "babel-preset-react": "^6.24.1"
+  }
+}
