@@ -1,0 +1,114 @@
+.controller {
+  &__container {
+    margin-top: 1em;
+    text-align: center;
+  }
+  
+  &__basewrapper {
+    padding: 2em;
+    display: inline-block;
+    position: relative;
+  }
+
+  &__joystick {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 23.5%;
+  }
+
+  &__baseimg {
+    transform: rotate(-15deg);
+    opacity: .6;
+  }
+}
+
+// Joystick movement animation 
+.controller {
+
+  &__joystick {
+    transition: all .2s ease-in-out;
+
+    &.right {
+      transform: rotateY(12deg);
+    }
+
+    &.up {
+      transform: rotateX(12deg);
+    }
+
+    &.down {
+      transform: rotateX(-12deg);
+    }
+
+    &.left {
+      transform: rotateY(-12deg);
+    }
+  }
+
+  &__baseimg {
+    transition: all .2s ease-in-out;
+
+    &.right {
+      opacity: .8;
+      transform: rotate(25deg);
+    }
+
+    &.up {
+      opacity: .8;
+      transform: rotate(-1deg);
+    }
+
+    &.down {
+      opacity: .8;
+      transform: rotate(-100deg);
+    }
+
+    &.left {
+      opacity: .8;
+      transform: rotate(-25deg);
+    }
+  }
+}
+
+// Chevron 
+.chevron {
+  fill: $salomie; 
+  position: absolute;
+  opacity: .5;
+  transition: all .2s ease-in-out;
+
+  &__up {
+    top: 0;
+    left: 47%;
+  }
+
+  &__down {
+    transform: rotate(180deg);
+    bottom: 0;
+    left: 47%; 
+  }
+
+  &__left {
+    top: 42%;
+    left: 0;
+    transform: rotate(-90deg);
+  }
+
+  &__right {
+    right: 0;
+    top: 42%;
+    transform: rotate(90deg);
+  }
+
+  &__up, 
+  &__down, 
+  &__right, 
+  &__left {
+    &.active {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+header {
+	@media screen and ( max-height: $max_height ){
+		text-align: left;
+	}
+
+	text-align: center;
+	background-color: #2483B2;
+	color: $white;
+
+	h1 {
+		@media screen and ( max-height: $max_height ){
+			text-align: left;
+			padding: 0 1em;
+			border-top: 0;
+			vertical-align: top;
+			margin: 0;
+			padding-left: 16%;
+    		padding-top: 1.5em;
+		}
+
+		margin-top: 0;
+		padding: .5em 1em 0em;
+		font-size: 1.5em;
+		display: inline-block;
+	}
+}
+
+.profile-img {
+	@media screen and ( max-height: $max_height ){
+		display: none;
+	}
+
+	display: block;
+	max-width: 200px; 
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+	border-radius: 100%;
+	padding: 20px 0px;
+}
+
+.coming-soon {
+	margin-top: 15px;
+    text-align: center;
+}

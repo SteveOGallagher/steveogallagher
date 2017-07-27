@@ -1,0 +1,20 @@
+{
+	"game": {
+		"columns": 1,
+		"rows": 0,
+		"playerStart": [0, 0],
+		"moveSpeed": 1000,
+		"generateSpeed": 2000
+	},
+	"color": {
+		"red": 65280,
+		"blue": 46920,
+		"green": 25500
+	},
+	"bridge": {	
+		"localIP": "http://10.1.0.203",
+		"herokuIP": "http://109.232.61.198",
+		"username": "myHmtTcbXb3EPOPeMDkXBwP4qKQ0RVwyGHl8aH2U"
+	}
+}
+
