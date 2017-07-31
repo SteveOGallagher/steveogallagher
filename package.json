@@ -9,7 +9,7 @@
     "production": "webpack -p",
     "watch": "webpack --watch --progress"
   },
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.8",
