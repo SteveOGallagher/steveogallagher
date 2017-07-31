@@ -1,31 +1,61 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.2.6",
+  "name": "windowsapp",
+  "version": "0.0.0",
   "description": "A sample Node.js app using Express 4",
-  "engines": {
-    "node": "6.11.1"
+  "private": true,
+  "scripts": {
+    "start": "nodemon server.js",
+    "webpack": "webpack-dev-server --progress --inline",
+    "production": "webpack -p",
+    "watch": "webpack --watch --progress"
   },
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "node test.js"
-  },
   "dependencies": {
-    "ejs": "2.5.6",
-    "express": "4.15.2"
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2016": "^6.16.0",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.11",
+    "html-webpack-plugin": "^2.24.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "nodemon": "^1.11.0",
+    "path": "^0.12.7",
+    "pump": "^1.0.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "react-router": "^3.0.0",
+    "request": "^2.79.0",
+    "serve-favicon": "~2.3.0",
+    "socket.io": "^1.6.0",
+    "socket.io-client": "^1.7.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
   },
-  "devDependencies": {
-    "request": "^2.81.0",
-    "tape": "^4.7.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+  "engines": {
+    "node": "6.1.0"
   },
   "keywords": [
     "node",
     "heroku",
     "express"
   ],
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-imagemin": "^3.1.1"
+  }
 }
