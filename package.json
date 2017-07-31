@@ -2,14 +2,16 @@
   "name": "windowsapp",
   "version": "0.0.0",
   "description": "A sample Node.js app using Express 4",
-  "private": true,
+  "engines": {
+    "node": "6.1.0"
+  },
   "scripts": {
     "start": "node server.js",
     "webpack": "webpack-dev-server --progress --inline",
     "production": "webpack -p",
     "watch": "webpack --watch --progress"
   },
-  "main": "server.js",
+  "main": "index.js",
   "dependencies": {
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.8",
@@ -41,9 +43,6 @@
     "socket.io-client": "^1.7.1",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
-  },
-  "engines": {
-    "node": "6.1.0"
   },
   "keywords": [
     "node",
