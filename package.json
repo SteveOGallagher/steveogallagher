@@ -4,7 +4,7 @@
   "description": "A sample Node.js app using Express 4",
   "private": true,
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "webpack": "webpack-dev-server --progress --inline",
     "production": "webpack -p",
     "watch": "webpack --watch --progress"
