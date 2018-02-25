@@ -3,7 +3,7 @@ var app = express();
 
 var player = require('./app/game/Player');
 
-var port = (process.env.PORT || 5000);
+var port = (process.env.PORT || 5001);
 var clients = []; 
 
 app.set('port', port);
