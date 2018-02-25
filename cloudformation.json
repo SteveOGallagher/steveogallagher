@@ -76,7 +76,8 @@
       "Description": "Create a Multi-AZ Amazon RDS database instance",
       "Type": "String",
       "AllowedValues": [
-        "false"
+        "false",
+        "true"
       ],
       "ConstraintDescription": "must be either true or false."
     },
@@ -93,7 +94,7 @@
     "InstanceType": {
       "Description": "WebServer EC2 instance type",
       "Type": "String",
-      "Default": "t2.small",
+      "Default": "t2.nano",
       "AllowedValues": [
         "t1.micro",
         "t2.nano",
