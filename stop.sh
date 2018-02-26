@@ -1,4 +1,3 @@
 #!/bin/bash
 
-pkill -f npm
-pkill -f nodemon
+forever stop server.js
