@@ -1,3 +1,3 @@
 #!/bin/bash
 
-forever stop server.js
+forever stopall
